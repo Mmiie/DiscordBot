@@ -33,7 +33,7 @@ public class Main extends ListenerAdapter{
         
         jda.upsertCommand("test", "for testing")
         .setGuildOnly(true)
-        .queue(); //a test to see if the bot is working
+        .queue(); //a test to see if the bot commands is working
         
         jda.upsertCommand("time-out", "time out a user")
         .addOption(OptionType.USER, "user", "the user you want to time out", true)
