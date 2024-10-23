@@ -25,10 +25,10 @@ public class Main extends ListenerAdapter{
                 .queue();
         
         jda.upsertCommand("ban", "ban a user")
-                .addOption(OptionType.USER, "banned_user", "ban that user", true)
+                .addOption(OptionType.USER, "user", "ban that user", true)
                 .addOption(OptionType.STRING, "reason", "the reason of the ban", true)
                 .setGuildOnly(true)
-                .queue();   //it doesn't work :(
+                .queue();
         
         
         jda.upsertCommand("test", "for testing")
